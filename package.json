@@ -1,7 +1,7 @@
 {
   "name": "d3-hull",
   "version": "0.0.1",
-  "description": "Andrew’s monotone chain algorithm for two-dimensional convex hulls.",
+  "description": "Compute the convex hull of a set of two-dimensional points.",
   "keywords": [
     "d3",
     "convex",
