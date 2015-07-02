@@ -13,6 +13,12 @@
     "name": "Mike Bostock",
     "url": "http://bost.ocks.org/mike"
   },
+  "contributors": [
+    {
+      "name": "Daniel Goldbach",
+      "url": "http://www.danielgoldbach.com/"
+    }
+  ],
   "main": "build/hull",
   "jsnext:main": "index",
   "repository": {
