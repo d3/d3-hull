@@ -1,6 +1,6 @@
 {
   "name": "d3-hull",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Compute the convex hull of a set of two-dimensional points.",
   "keywords": [
     "d3",
@@ -19,19 +19,19 @@
       "url": "http://www.danielgoldbach.com/"
     }
   ],
-  "main": "build/hull",
+  "main": "build/hull.cjs",
   "jsnext:main": "index",
   "repository": {
     "type": "git",
     "url": "https://github.com/d3/d3-hull.git"
   },
   "scripts": {
-    "pretest": "mkdir -p build && d3-bundler --format=umd --name=hull -- index.js > build/hull.js",
+    "pretest": "mkdir -p build && d3-bundler -x -f cjs -o build/hull.cjs.js",
     "test": "faucet `find test -name '*-test.js'`",
-    "prepublish": "npm run test && uglifyjs build/hull.js -c -m -o build/hull.min.js && rm -f build/hull.zip && zip -j build/hull.zip -- LICENSE README.md build/hull.js build/hull.min.js"
+    "prepublish": "npm run test && d3-bundler -n hull -o build/hull.js && uglifyjs build/hull.js -c -m -o build/hull.min.js && rm -f build/hull.zip && zip -j build/hull.zip -- LICENSE README.md build/hull.js build/hull.min.js"
   },
   "devDependencies": {
-    "d3-bundler": "~0.2.5",
+    "d3-bundler": "~0.4.0",
     "faucet": "0.0",
     "tape": "4",
     "uglify-js": "2"
