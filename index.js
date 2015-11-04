@@ -1,5 +1,1 @@
-import hull from "./src/hull";
-
-export {
-  hull
-};
+export {default as hull} from "./src/hull";
