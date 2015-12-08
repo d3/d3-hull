@@ -1,7 +1,7 @@
 {
   "name": "d3-hull",
-  "version": "0.0.3",
-  "description": "Compute the convex hull of a set of two-dimensional points.",
+  "version": "0.0.4",
+  "description": "DEPRECATED; see d3-polygon’s hull function.",
   "keywords": [
     "d3",
     "convex",
